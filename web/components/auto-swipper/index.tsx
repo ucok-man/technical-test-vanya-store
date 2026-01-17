@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
+import "swiper/css/bundle";
 import { Mousewheel, Scrollbar } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 

@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import FeatureCard from "@/components/feature-card";
+import GradientButton from "@/components/gradient-button";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
+import StrokeGradientText from "@/components/stroke-gradient-text";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -49,17 +51,9 @@ export default function SectionHero() {
       {/* Content */}
       <div className="absolute bottom-0 left-0 w-full py-8">
         <MaxWidthWrapper className="space-y-7.5">
-          <div className="relative inline-block">
-            {/* Stroke layer */}
-            <h1 className="absolute inset-0 text-[88px] leading-20 font-cherry-bomb [-webkit-text-stroke:10px_white] tracking-tight text-transparent">
-              Mayoblox <br /> Sahabat Robloxmu
-            </h1>
-
-            {/* Fill layer */}
-            <h1 className="relative text-[88px] leading-20 font-cherry-bomb text-transparent bg-clip-text bg-brand-gradient-primary tracking-tight">
-              Mayoblox <br /> Sahabat Robloxmu
-            </h1>
-          </div>
+          <StrokeGradientText className="text-[88px] leading-19 tracking-normal">
+            Mayoblox <br /> Sahabat Robloxmu
+          </StrokeGradientText>
 
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-8">
@@ -161,12 +155,13 @@ export default function SectionHero() {
             </div>
 
             <div className="space-y-5">
-              <button className="bg-primary shadow-button-primary rounded-full font-semibold font-chillax text-2xl text-brand-white-100 tracking-tight flex items-center justify-center py-7 px-8 w-[406px]">
+              <GradientButton variant="primary" className="w-[406px]">
                 Top Up Robux Sekarang
-              </button>
-              <button className="bg-brand-gradient-secondary rounded-full font-semibold font-chillax text-2xl text-brand-white-100 tracking-tight flex items-center justify-center py-7 px-8 w-[406px]">
-                Top Up Robux Sekarang
-              </button>
+              </GradientButton>
+
+              <GradientButton variant="secondary" className="w-[406px]">
+                Cek Pesanan Di Sini
+              </GradientButton>
             </div>
           </div>
 
@@ -174,7 +169,7 @@ export default function SectionHero() {
             <h3 className="font-cherry-bomb text-primary text-[32px] leading-8">
               Pilih layanan yang kamu butuhkan
             </h3>
-            <p className="font-jakarta-sans leading-6 tracking-wide text-brand-dark-500">
+            <p className="font-jakarta-sans leading-6 tracking-wide text-brand-dark-500 font-normal tracking-wide">
               Berbagai layanan terbaik untuk kebutuhan Robloxmu
             </p>
           </div>

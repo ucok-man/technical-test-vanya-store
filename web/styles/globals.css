@@ -46,6 +46,12 @@
     var(--brand-pink-500) 100.68%
   );
 
+  --background-image-brand-gradient-primary-hover: linear-gradient(
+    146.14deg,
+    var(--brand-pink-500) 0%,
+    var(--brand-pink-500) 100%
+  );
+
   --background-image-brand-gradient-secondary: linear-gradient(
     146.14deg,
     var(--brand-blue-500) 8.01%,
@@ -54,8 +60,18 @@
     var(--brand-blue-500) 100.68%
   );
 
+  --background-image-brand-gradient-secondary-hover: linear-gradient(
+    146.14deg,
+    var(--brand-blue-500) 0%,
+    var(--brand-blue-500) 100%
+  );
+
   --shadow-button-primary: inset 12px 12px 24px 0px #ffffff70,
     inset -12px -12px 24px 0px #ff779738, 12px 12px 24px 0px #ff779738,
+    -12px -12px 24px 0px #ffffff38;
+
+  --shadow-button-secondary: inset 12px 12px 24px 0px #ffffff70,
+    inset -12px -12px 24px 0px #97bdf538, 12px 12px 24px 0px #97bdf538,
     -12px -12px 24px 0px #ffffff38;
 
   --color-brand-white-100: var(--brand-white-100);
