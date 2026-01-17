@@ -2,9 +2,9 @@
 
 import Badge from "@/components/badge";
 import GradientButton from "@/components/gradient-button";
-import GradientHeading from "@/components/gradient-text";
+import GradientText from "@/components/gradient-text";
+import GradientTextStroke from "@/components/gradient-text-stroke";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
-import StrokeGradientText from "@/components/stroke-gradient-text";
 import Image from "next/image";
 
 export default function SectionAbout() {
@@ -13,13 +13,13 @@ export default function SectionAbout() {
       <MaxWidthWrapper className="flex items-center gap-16">
         <div className="flex flex-col items-start justify-center gap-3 w-full">
           <Badge>Tentang Mayoblox</Badge>
-          <GradientHeading as="h3" className="text-[40px] leading-13">
+          <GradientText as="h3" className="text-[40px] leading-13">
             Butuh bantuan cepat atau pertanyaan? <br /> kirimkan pesan kamu
             dibawah
-          </GradientHeading>
+          </GradientText>
         </div>
 
-        <div className="font-jakarta-sans text-right text-pretty max-w-[400px] text-brand-dark-300 font-normal">
+        <div className="font-jakarta-sans text-right max-w-[400px] text-brand-dark-300 font-normal text-[16px]">
           Nikmati pengalaman top up yang simpel dan super cepat. Kelola
           kebutuhan Robux kamu hanya dengan beberapa klik—praktis, aman, dan
           cocok untuk gaya hidup kamu yang serba ngebut.
@@ -38,9 +38,9 @@ export default function SectionAbout() {
             />
 
             <div className="flex flex-col items-center justify-center gap-14 leading-19 h-full p-10 ">
-              <StrokeGradientText className="text-[88px] leading-19">
+              <GradientTextStroke className="text-[88px] leading-19">
                 STATISTIK <br /> MAYOBLOX
-              </StrokeGradientText>
+              </GradientTextStroke>
 
               <GradientButton variant="primary" className="w-[342px] h-[84px]">
                 Top Up Robux Sekarang
@@ -49,7 +49,7 @@ export default function SectionAbout() {
           </div>
 
           {/* Second Bento */}
-          <div className="bg-brand-gradient-primary rounded-3xl p-10 flex items-center gap-8">
+          <div className="bg-brand-gradient-primary rounded-3xl p-10 flex items-center gap-8 h-full">
             <Image
               src="/about/flower-token.png"
               alt=""
@@ -62,20 +62,20 @@ export default function SectionAbout() {
               <p className="font-chillax font-semibold text-[28px] leading-8 text-brand-white-100 shrink-0">
                 Robux Terjual di Mayoblox
               </p>
-              <StrokeGradientText
+              <GradientTextStroke
                 className="text-[56px] leading-[56px]"
                 gradientClass="bg-primary"
               >
                 73.703.644 R$
-              </StrokeGradientText>
+              </GradientTextStroke>
             </div>
           </div>
 
           {/* Third Bento */}
-          <div className="bg-tertiary rounded-3xl h-[200px] p-10 flex flex-col items-center justify-center gap-6">
-            <StrokeGradientText className="text-[88px] leading-19">
+          <div className="bg-tertiary rounded-3xl h-[200px] p-10 flex flex-col items-center justify-center gap-6 h-full">
+            <GradientTextStroke className="text-[88px] leading-19">
               268.190
-            </StrokeGradientText>
+            </GradientTextStroke>
 
             <p className="font-chillax font-semibold text-[28px] leading-8 text-primary">
               Total Order Sobat Mayo

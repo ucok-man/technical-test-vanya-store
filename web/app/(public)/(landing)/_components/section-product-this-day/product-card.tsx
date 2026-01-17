@@ -21,10 +21,10 @@ export default function ProductCard({ icon, label, price }: Props) {
         </div>
 
         <div>
-          <p className="font-chillax font-semibold text-[16px] text-brand-dark-400/68 leading-[28px]">
+          <p className="font-chillax font-semibold text-[16px] leading-[24px] tracking-[0.5%] text-brand-dark-400/68">
             {label}
           </p>
-          <p className="text-primary font-chillax font-semibold text-[20px] leading-[26px]">
+          <p className="text-primary font-chillax font-semibold text-[20px] leading-[26px] tracking-[-2%]">
             {price}
           </p>
         </div>

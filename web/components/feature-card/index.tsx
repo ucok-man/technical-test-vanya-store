@@ -1,5 +1,5 @@
+import { cn } from "@/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
-import clsx from "clsx";
 import { ReactNode } from "react";
 
 const outerCard = cva(
@@ -46,8 +46,8 @@ type Props = {
 
 export default function FeatureCard({ children, radius, className }: Props) {
   return (
-    <div className={clsx(outerCard({ radius }), className)}>
-      <div className={innerCard({ radius })}>{children}</div>
+    <div className={cn(outerCard({ radius }))}>
+      <div className={cn(innerCard({ radius }), className)}>{children}</div>
     </div>
   );
 }

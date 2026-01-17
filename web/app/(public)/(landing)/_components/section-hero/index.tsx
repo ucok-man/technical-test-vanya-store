@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import FeatureCard from "@/components/feature-card";
 import GradientButton from "@/components/gradient-button";
+import GradientTextStroke from "@/components/gradient-text-stroke";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
-import StrokeGradientText from "@/components/stroke-gradient-text";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -51,9 +51,9 @@ export default function SectionHero() {
       {/* Content */}
       <div className="absolute bottom-0 left-0 w-full py-8">
         <MaxWidthWrapper className="space-y-7.5">
-          <StrokeGradientText className="text-[88px] leading-19 tracking-normal">
+          <GradientTextStroke className="text-[88px] leading-19 tracking-normal">
             Mayoblox <br /> Sahabat Robloxmu
-          </StrokeGradientText>
+          </GradientTextStroke>
 
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-8">
@@ -169,7 +169,7 @@ export default function SectionHero() {
             <h3 className="font-cherry-bomb text-primary text-[32px] leading-8">
               Pilih layanan yang kamu butuhkan
             </h3>
-            <p className="font-jakarta-sans leading-6 tracking-wide text-brand-dark-500 font-normal tracking-wide">
+            <p className="font-jakarta-sans leading-6 tracking-wide text-brand-dark-500 font-normal text-[16px]">
               Berbagai layanan terbaik untuk kebutuhan Robloxmu
             </p>
           </div>

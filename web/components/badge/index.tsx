@@ -10,7 +10,7 @@ export default function Badge({ children, className }: Props) {
   return (
     <div
       className={cn(
-        "py-2 px-4 uppercase rounded-4xl border border-primary flex flex-col items-center justify-center font-chillax text-[11px] tracking-widest font-bold bg-[#F59BB71A] text-primary",
+        "py-2 px-4 uppercase rounded-4xl border border-primary flex flex-col items-center justify-center font-chillax text-[11px] tracking-widest font-bold bg-[#F59BB71A] text-primary w-fit",
         className
       )}
     >

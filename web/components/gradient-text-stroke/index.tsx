@@ -3,10 +3,10 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { ElementType, ReactNode } from "react";
 
 const textVariants = cva(
-  "tracking-tight text-transparent font-normal font-cherry-bomb"
+  "tracking-normal text-transparent font-normal font-cherry-bomb"
 );
 
-type StrokeGradientTextProps<T extends ElementType> = {
+type Props<T extends ElementType> = {
   as?: T;
   children: ReactNode;
   className?: string;
@@ -14,13 +14,13 @@ type StrokeGradientTextProps<T extends ElementType> = {
   gradientClass?: string;
 } & VariantProps<typeof textVariants>;
 
-export default function StrokeGradientText<T extends ElementType = "h1">({
+export default function GradientTextStroke<T extends ElementType = "h1">({
   as,
   children,
   className,
   strokeWidth = 10,
   gradientClass = "bg-brand-gradient-primary",
-}: StrokeGradientTextProps<T>) {
+}: Props<T>) {
   const Component = as || "h1";
 
   const textClass = cn(textVariants(), className);
