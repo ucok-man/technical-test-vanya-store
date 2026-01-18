@@ -16,6 +16,7 @@
   --brand-pink-400: #fe86a2;
   --brand-pink-300: #ff9bb3;
   --brand-pink-200: #fdb1c3;
+  --brand-pink-150: #ffc2d1;
   --brand-pink-100: #ffe1e8;
   --brand-pink-50: #fff1f4;
 
@@ -88,6 +89,7 @@
   --color-brand-primary-300: var(--brand-pink-300);
   --color-brand-primary-200: var(--brand-pink-200);
   --color-brand-primary-100: var(--brand-pink-100);
+  --color-brand-primary-150: var(--brand-pink-150);
   --color-brand-primary-50: var(--brand-pink-50);
 
   --color-brand-secondary-500: var(--brand-blue-500);
