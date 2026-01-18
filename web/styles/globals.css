@@ -105,6 +105,45 @@
     -12px -12px 24px 0px #ffffff38;
 }
 
+@utility border-gradient-primary {
+  --border-g: 1px; /* default thickness */
+
+  position: relative;
+  border-radius: inherit;
+}
+
+.border-gradient-primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: var(--border-g);
+  border-radius: inherit;
+
+  background: linear-gradient(141.23deg, #ffe1e8 -1.96%, #ff7797 95.64%);
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  pointer-events: none;
+}
+
+@utility border-g-1 {
+  --border-g: 1px;
+}
+@utility border-g-2 {
+  --border-g: 2px;
+}
+@utility border-g-3 {
+  --border-g: 3px;
+}
+@utility border-g-4 {
+  --border-g: 4px;
+}
+@utility border-g-5 {
+  --border-g: 5px;
+}
+
 @layer base {
   body {
     @apply bg-background text-foreground;
@@ -114,3 +153,9 @@
     @apply hover:cursor-pointer;
   }
 }
+
+/* .swiper, */
+/* .swiper-wrapper, */
+/* .swiper-slide {
+  @apply overflow-visible!;
+} */
