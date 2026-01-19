@@ -5,7 +5,7 @@ import SectionFAQ from "./_components/section-faq";
 // import SectionProductBestSeller from "./_components/section-product-best-seller";
 // import SectionProductNewestSold from "./_components/section-product-newest-sold";
 // import SectionProductThisDay from "./_components/section-product-this-day";
-// import SectionTestimonial from "./_components/section-testimonial";
+import SectionTestimonial from "./_components/section-testimonial";
 
 export default function HomePage() {
   return (
@@ -15,7 +15,7 @@ export default function HomePage() {
       {/* <SectionAbout /> */}
       {/* <SectionProductNewestSold /> */}
       {/* <SectionProductBestSeller /> */}
-      {/* <SectionTestimonial /> */}
+      <SectionTestimonial />
       <SectionFAQ />
       <SectionContact />
     </div>
