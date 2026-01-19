@@ -21,7 +21,7 @@ export default function SectionContact() {
         <div className="flex flex-col items-center justify-center gap-9 w-full max-w-2xl">
           <header className="flex flex-col items-center justify-center gap-3">
             <Badge>Kontak Kami</Badge>
-            <GradientText className="text-4xl md:text-5xl text-center">
+            <GradientText className="text-4xl md:text-5xl text-center leading-[115%]">
               Butuh bantuan cepat atau pertanyaan? kirimkan pesan kamu dibawah
             </GradientText>
           </header>

@@ -1,6 +1,6 @@
 // import SectionAbout from "./_components/section-about";
 import SectionContact from "./_components/section-contact";
-// import SectionFAQ from "./_components/section-faq";
+import SectionFAQ from "./_components/section-faq";
 // import SectionHero from "./_components/section-hero";
 // import SectionProductBestSeller from "./_components/section-product-best-seller";
 // import SectionProductNewestSold from "./_components/section-product-newest-sold";
@@ -16,7 +16,7 @@ export default function HomePage() {
       {/* <SectionProductNewestSold /> */}
       {/* <SectionProductBestSeller /> */}
       {/* <SectionTestimonial /> */}
-      {/* <SectionFAQ /> */}
+      <SectionFAQ />
       <SectionContact />
     </div>
   );
