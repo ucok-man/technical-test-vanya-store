@@ -28,9 +28,9 @@ const cherryBombOne = localFont({
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
-    <html lang="en">
+    <html lang="en" className="">
       <body
-        className={`antialiased ${chillax.variable} ${jakartaSans.variable} ${cherryBombOne.variable} font-jakarta-sans`}
+        className={`antialiased ${chillax.variable} ${jakartaSans.variable} ${cherryBombOne.variable} font-jakarta-sans max-w-[1920px] mx-auto`}
       >
         {children}
       </body>

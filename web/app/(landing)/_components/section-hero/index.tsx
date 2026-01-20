@@ -8,11 +8,12 @@ import Link from "next/link";
 export default function SectionHero() {
   return (
     <section>
-      <div className="relattive h-screen">
+      <div className="relative h-screen min-h-[580px]">
         {/* Background image */}
         <Image
           src="/hero-bg.png"
           alt="Hero background"
+          quality={95}
           fill
           className="absolute inset-0 size-full object-cover object-[center_62%]"
         />
