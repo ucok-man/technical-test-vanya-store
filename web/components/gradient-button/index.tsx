@@ -44,7 +44,7 @@ export default function GradientButton({
       className={cn(
         "group relative overflow-hidden rounded-full w-full",
         "py-5 px-8 flex items-center justify-center",
-        "font-chillax text-brand-white-100 font-semibold text-lg md:text-xl tracking-tight",
+        "font-chillax text-brand-white-100 font-semibold text-base tracking-tight",
         "border-2 border-brand-white-100/15",
         className
       )}

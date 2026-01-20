@@ -20,10 +20,7 @@ export default function Footer() {
       </div>
 
       {/* Content */}
-      <div
-        className="
-      bg-primary pt-24 pb-10 relative z-10 -mt-10 md:-mt-20"
-      >
+      <div className="bg-primary pt-24 pb-10 relative z-10 -mt-10 md:-mt-20">
         <MaxWidthWrapper className="px-4 sm:px-6 lg:px-8 font-jakarta-sans font-medium text-brand-white-100 space-y-16">
           {/* Top Grid */}
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">

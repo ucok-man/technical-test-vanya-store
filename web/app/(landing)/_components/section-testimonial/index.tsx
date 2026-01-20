@@ -21,7 +21,6 @@ const TESTIMONI_ITEMS = Array.from({ length: 5 }, () => ({
 
 export default function SectionTestimonial() {
   const isMD = useMediaQuery("(max-width: 768px)");
-  console.log({ isMD });
 
   return (
     <section className="space-y-34 relative overflow-hidden">
@@ -43,10 +42,7 @@ export default function SectionTestimonial() {
       <MaxWidthWrapper className="flex flex-col items-center justify-center gap-6">
         <header className="flex flex-col items-center justify-center gap-3">
           <Badge>Tentang Mayoblox</Badge>
-          <GradientText
-            as="h3"
-            className="text-5xl md:text-6xl leading-[115%] text-center"
-          >
+          <GradientText className="text-5xl md:text-6xl leading-[115%] text-center">
             Apa kata SobatMayo
           </GradientText>
         </header>
@@ -58,12 +54,18 @@ export default function SectionTestimonial() {
 
         <GradientButton
           variant="primary"
-          className="w-full max-w-md text-xl md:text-2xl"
+          className="w-full max-w-md text-xl md:text-2xl py-2.5 sm:py-4"
         >
-          <span className="flex items-center justify-center gap-3">
+          <div className="flex items-center justify-center gap-3">
             <Icons.video className="size-12" />
-            <span>Lihat Video Testimoni</span>
-          </span>
+
+            <p className="text-nowrap">
+              <span className="min-[360px]:inline-block hidden">
+                Lihat Video
+              </span>{" "}
+              Testimoni
+            </p>
+          </div>
         </GradientButton>
       </MaxWidthWrapper>
 

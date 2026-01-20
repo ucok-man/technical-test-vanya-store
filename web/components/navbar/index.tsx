@@ -15,7 +15,7 @@ export default function Navbar() {
               alt="Mayobox Logo"
               width={2160}
               height={1576}
-              className="w-28 h-19 object-center object-fill"
+              className="w-24 md:w-28 h-19 object-center object-fill"
             />
           </div>
 

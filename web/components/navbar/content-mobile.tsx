@@ -8,7 +8,7 @@ type Props = {
 
 export default function ContentMobile({ className }: Props) {
   return (
-    <div className={cn("flex w-full gap-3 items-center", className)}>
+    <div className={cn("flex w-full gap-1.5 items-center", className)}>
       <Icons.burger className="fill-transparent stroke-primary size-5 hover:stroke-primary/85 cursor-pointer shrink-0" />
       <div className="min-[320px]:hidden shrink-0">
         <Image
@@ -16,7 +16,7 @@ export default function ContentMobile({ className }: Props) {
           alt="Mayobox Logo"
           width={2160}
           height={1576}
-          className="w-28 h-19 object-center object-fill"
+          className="w-24 h-19 object-center object-fill"
         />
       </div>
     </div>

@@ -230,7 +230,10 @@ export default function ContactForm() {
       </FieldGroup>
 
       <div className="flex items-center justify-center w-full">
-        <GradientButton type="submit" className="w-fit">
+        <GradientButton
+          type="submit"
+          className="w-fit text-base md:text-lg xl:text-xl"
+        >
           Kirim Pesan Bantuan
         </GradientButton>
       </div>
